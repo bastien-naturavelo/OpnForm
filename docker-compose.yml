@@ -8,14 +8,12 @@ services:
     volumes:
       - '.:/project'
     working_dir: '/project'
-    user: '1000'
 
   node-cli:
     image: 'node:16'
     volumes:
       - '.:/project'
     working_dir: '/project'
-    user: '1000'
 
   composer-cli:
     build:
@@ -24,7 +22,6 @@ services:
     volumes:
       - '.:/project'
     working_dir: '/project'
-    user: '1000'
 
   composer-install:
     extends:
